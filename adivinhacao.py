@@ -16,3 +16,7 @@ if nomero_secreto == numero_chute:
     print("Você acertou!!")
 else:
     print("Você errou!!")
+
+print("*********************************")
+print("Fim do jogo!")
+print("*********************************")
