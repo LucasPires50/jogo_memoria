@@ -12,12 +12,17 @@ numero_chute = int(chute_usuario)
 
 print("Você digitou: ", numero_chute)
 
-if nomero_secreto == numero_chute:
+# Colocar a condição do if em uma variavel
+acertou = nomero_secreto == numero_chute
+chute_maior = numero_chute > nomero_secreto
+chute_menor = numero_chute < nomero_secreto
+
+if acertou:
     print("Você acertou!!")
 else:
-    if(numero_chute > nomero_secreto):
+    if(chute_maior):
         print("Você errou! O seu chute foi maior do que o número secreto.")
-    elif(numero_chute < nomero_secreto):
+    elif(chute_menor):
         print("Você errou! O seu chute foi menor do que o número secreto.")
 
 print("*********************************")
