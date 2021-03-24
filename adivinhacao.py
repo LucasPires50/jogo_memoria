@@ -7,7 +7,8 @@ total_de_tentativas = 3
 rodada = 1
 
 while (rodada <= total_de_tentativas):
-    print("Tentativa", rodada, "de:", total_de_tentativas)
+    # Interpolção de string
+    print("Tentativa {} de {}".format(rodada, total_de_tentativas))
     # Função para o usuário para usuário inserir a informação solicita
     chute_usuario = input("Digiteo seu número: ")
 
