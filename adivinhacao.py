@@ -10,10 +10,15 @@ for rodada in range(1, total_de_tentativas + 1):
     # Interpolção de string
     print("Tentativa {} de {}".format(rodada, total_de_tentativas))
     # Função para o usuário para usuário inserir a informação solicita
-    chute_usuario = input("Digiteo seu número: ")
+    chute_usuario = input("Digiteo um número entre 1 e 100: ")
 
     # Função para converter a string para inter
     numero_chute = int(chute_usuario)
+
+    if (numero_chute < 1 or numero_chute > 100):
+        print("Você deve digitar um número entre 1 e 100.")
+        # sai dessa interação, e continua o loop
+        continue
 
     print("Você digitou: ", numero_chute)
 
