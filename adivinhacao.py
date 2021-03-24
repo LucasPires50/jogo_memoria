@@ -5,7 +5,7 @@ print("Bem Vindo ao jogo de adivinhação!")
 print("*********************************")
 
 # função rondom para gerar número aleatórios 
-nomero_secreto = round(random.random() * 100)
+nomero_secreto = round(random.randrange(1, 101)) 
 total_de_tentativas = 3
 
 print(nomero_secreto)
