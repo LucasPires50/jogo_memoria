@@ -22,9 +22,9 @@ for rodada in range(1, total_de_tentativas + 1):
     chute_maior = numero_chute > nomero_secreto
     chute_menor = numero_chute < nomero_secreto
 
-    if acertou:
+    if (acertou):
         print("Você acertou!!")
-        exit()
+        break
     else:
         if(chute_maior):
             print("Você errou! O seu chute foi maior do que o número secreto.")
