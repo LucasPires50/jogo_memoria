@@ -4,9 +4,10 @@ print("*********************************")
 
 nomero_secreto = 42
 total_de_tentativas = 3
+rodada = 1
 
-while (total_de_tentativas > 0):
-    print("Tentativa:", total_de_tentativas)
+while (rodada <= total_de_tentativas):
+    print("Tentativa", rodada, "de:", total_de_tentativas)
     # Função para o usuário para usuário inserir a informação solicita
     chute_usuario = input("Digiteo seu número: ")
 
@@ -28,7 +29,7 @@ while (total_de_tentativas > 0):
         elif(chute_menor):
             print("Você errou! O seu chute foi menor do que o número secreto.")
 
-    total_de_tentativas = total_de_tentativas - 1
+    rodada = rodada + 1
 
 print("*********************************")
 print("Fim do jogo!")
