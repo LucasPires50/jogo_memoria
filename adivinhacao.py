@@ -1,10 +1,14 @@
+import random
+
 print("*********************************")
 print("Bem Vindo ao jogo de adivinhação!")
 print("*********************************")
 
-nomero_secreto = 42
+# função rondom para gerar número aleatórios 
+nomero_secreto = round(random.random() * 100)
 total_de_tentativas = 3
 
+print(nomero_secreto)
 
 for rodada in range(1, total_de_tentativas + 1):
     # Interpolção de string
