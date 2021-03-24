@@ -4,11 +4,21 @@ print("*********************************")
 print("Bem Vindo ao jogo de adivinhação!")
 print("*********************************")
 
-# função rondom para gerar número aleatórios 
-nomero_secreto = round(random.randrange(1, 101)) 
+# função rondom para gerar número aleatórios
+nomero_secreto = round(random.randrange(1, 101))
 total_de_tentativas = 3
 
-print(nomero_secreto)
+print("Escolha um nivel de dificuldade: ")
+print("(1)Fácil (2)Médio (3)Difícil")
+
+nivel = int(input("Escolha um nível: "))
+
+if (nivel == 1):
+    total_de_tentativas = 20
+elif(nivel == 2):
+    total_de_tentativas = 10
+else:
+    total_de_tentativas = 3
 
 for rodada in range(1, total_de_tentativas + 1):
     # Interpolção de string
