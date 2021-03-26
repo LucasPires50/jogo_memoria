@@ -2,7 +2,7 @@ import random
 
 
 def jogar_adivinhacao():
-    
+
     print("*********************************")
     print("Bem Vindo ao jogo de adivinhação!")
     print("*********************************")
@@ -60,3 +60,8 @@ def jogar_adivinhacao():
     print("*********************************")
     print("Fim do jogo!")
     print("*********************************")
+
+
+# chamar a função - validae se a variavel que importa adivinhacao foi prenchida, se sim, excuta a função abaixo:
+if(__name__ == "__main__"):
+    jogar_adivinhacao()
